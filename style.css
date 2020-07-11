@@ -1,0 +1,13 @@
+body  {
+    background-color: lightslategrey;
+}
+
+Title{
+    display: block;
+    background-color: blue;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    height: 80px;
+    padding: 3px;
+    width: 600px;
+}
