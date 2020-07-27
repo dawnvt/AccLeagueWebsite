@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Accuracy League</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link href="./css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">
+            <img style="max-width: 70px;" src="./media/logo.png">
+        </a>
+        <a href="index.html" class="button">Main Page</a>
+        <a href="qualifiers.html" class="button">Qualifiers</a>
+        <a href="mappools.html" class="button active">Map Pools</a>
+        <a href="rules.html" class="button">Rules</a>
+        <a href="players.html" class="button">Players</a>
+        <a href="bracket.html" class="button">Bracket</a>
+        <a href="contributors.html" class="button">Contributors</a>
+        <a href="disclaimer.html" class="button">Disclaimer</a>
+        <a href="staff.html" class="button">Staff</a>
+    </div>
+
+    <span class="burger-expand" onclick="openNav()">&#9776;</span>
+
+    <script>
+        /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft = "0";
+        }
+      </script>
+    <script src="./js/bootstrap.bundle.js"></script>
+</body>
+</html>
