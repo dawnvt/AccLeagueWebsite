@@ -24,7 +24,7 @@
 		</template>
 	</b-table>
 	<b-button class="is-success">
-		<a href="https://beatkhana.com/api/download-pool/91">Download Playlist</a>
+		<a class="button-text" href="https://beatkhana.com/api/download-pool/91">Download Playlist</a>
 	</b-button>
 </section>
 </template>
@@ -59,7 +59,7 @@
 </script>
 
 <style scoped>
-a {
+.button-text {
 	color: white;
 }
 </style>
