@@ -24,7 +24,7 @@
 		</template>
 	</b-table>
 	<b-button class="is-success">
-		<a class="button-text" href="https://beatkhana.com/api/download-pool/91">Download Playlist</a>
+		<a class="button-text" href="https://beatkhana.com/api/download-pool/111">Download Playlist</a>
 	</b-button>
 </section>
 </template>
@@ -43,12 +43,11 @@
 			getMaps: function() {
 				axios.get('https://beatkhana.com/api/tournament/2147484131/map-pools')
 				.then((response) => {
-					this.maps = response.data['91'].songs;
-					this.map_pool = response.data['91'].poolName;
+					this.maps = response.data['111'].songs;
+					this.map_pool = response.data['111'].poolName;
 				});
 			},
 			openWindow: function (link) {
-				console.log('smeg');
 				window.open(link, '_blank');
 			}
 		},
