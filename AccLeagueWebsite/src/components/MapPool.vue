@@ -1,4 +1,5 @@
 <template>
+<section>
 	<b-table :data="maps">
 		<template slot-scope="props">
 			<b-table-column field="song" label="Song">
@@ -22,6 +23,10 @@
 			</b-table-column>
 		</template>
 	</b-table>
+	<b-button class="is-success">
+		<a href="https://beatkhana.com/api/download-pool/91">Download Playlist</a>
+	</b-button>
+</section>
 </template>
 
 <script>
@@ -52,3 +57,9 @@
 		}
     }
 </script>
+
+<style scoped>
+a {
+	color: white;
+}
+</style>
