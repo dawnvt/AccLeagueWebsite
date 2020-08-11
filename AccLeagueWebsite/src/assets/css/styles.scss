@@ -1,0 +1,25 @@
+/*
+* === BODY, APP BACKGROUND ETC. ===
+*/
+html, body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  max-width: 1040px;
+}
+
+.app-background {
+  background-color: #0a0a0a;
+}
+
+.dynamic-title {
+  color: #FFFFFF;
+}
+
+.dynamic-subtitle {
+  color: cyan;
+  padding-top: 10px;
+}

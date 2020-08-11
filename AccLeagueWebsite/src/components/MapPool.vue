@@ -1,6 +1,6 @@
 <template>
-<section>
-	<b-table :data="maps">
+	<div clas="container">
+	<b-table class="myTable" :data="maps">
 		<template slot-scope="props">
 			<b-table-column field="song" label="Song">
 				<div>
@@ -26,7 +26,7 @@
 	<b-button class="is-success">
 		<a class="button-text" href="https://beatkhana.com/api/download-pool/111">Download Playlist</a>
 	</b-button>
-</section>
+	</div>
 </template>
 
 <script>
@@ -57,8 +57,23 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+.myTable {
+  /deep/ table.table {
+	background-color: #0a0a0a;
+	color: white;
+  }
+
+
+}
+
 .button-text {
 	color: white;
+}
+
+.white {
+	/deep/ column {
+	  color: white;
+  }
 }
 </style>
