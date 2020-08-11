@@ -25,6 +25,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: white;
+  background-color: #0a0a0a;
 }
 
 .tabs a {
