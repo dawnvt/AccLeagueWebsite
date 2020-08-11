@@ -1,7 +1,4 @@
 <template>
-	<!-- <div class="content">
-		<h1>Information coming soon</h1>
-	</div> -->
 	<div class="container top">
 
         <b-collapse
