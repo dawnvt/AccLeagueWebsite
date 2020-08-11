@@ -28,6 +28,14 @@ export default {
   background-color: #0a0a0a;
 }
 
+.card {
+  background-color: #363636;
+}
+
+.card-header-title {
+  color: white;
+}
+
 .tabs a {
   color: white;
 }
