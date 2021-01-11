@@ -1,17 +1,19 @@
 <template>
-	<b-tabs class="is-large is-dark" v-model="activeTab">
+	<div class="container">
+	<b-tabs class="is-large" v-model="activeTab">
 		<b-loading is-full-page="false" :active.sync="isLoading" :can-cancel="true"></b-loading>
 		<b-tab-item label="Overall">
-			<b-table :data="overall" :columns="columns"></b-table>
+			<b-table class="myTable" :data="overall" :columns="columns"></b-table>
 		</b-tab-item>
 		<template v-for="(map, index) in maps">
 			<b-tab-item
 				:key="index"
 				:label="map.name">
-				<b-table :data="data[index]" :columns="columns"></b-table>
+				<b-table class="myTable" :data="data[map.id]" :columns="columns"></b-table>
 			</b-tab-item>
 		</template>
 	</b-tabs>
+	</div>
 </template>
 
 <script>
@@ -65,13 +67,13 @@
 				.then((response) => {
 					this.overall = response.data;
 				})
-				let data = [];
+				let data = {};
 				let promises = [];
 				for (let i = 0; i < this.maps.length; i++) {
 					promises.push(
 						axios.get('https://www.accuracyleague.com/api/maps/ranking/' + this.maps[i].id)
 						.then(response => {
-							data.push(response.data);
+							data[this.maps[i].id] = response.data;
 							this.isLoading = false;
 						})
 					)
@@ -93,3 +95,12 @@
 		}
     }
 </script>
+
+<style lang="scss" scoped>
+.myTable {
+  /deep/ table.table {
+	background-color: #0a0a0a;
+	color: white;
+  }
+}
+</style>

@@ -4,6 +4,7 @@ import router from './router'
 
 import Buefy from 'buefy'
 import 'buefy/dist/buefy.css'
+import './assets/css/styles.scss'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'

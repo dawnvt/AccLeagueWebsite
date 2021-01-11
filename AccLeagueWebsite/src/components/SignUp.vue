@@ -1,7 +1,6 @@
 <template>
-	<section>
-        <div class="top">
-        <b-field horizontal class="top" label="Enter your name:">
+        <div class="container top">
+        <b-field horizontal label="Enter your name:">
             <b-input v-model="name" placeholder="Name"></b-input>
         </b-field>
 
@@ -41,7 +40,6 @@
         </b-field>
 		<b-button class="button is-medium is-success" v-on:click="submitData">Submit</b-button>
         </div>
-    </section>
 </template>
 
 <script>
@@ -92,6 +90,6 @@ export default {
 <style scoped>
     .top {
         margin-top: 2%;
-        margin-right: 5%;
+        margin-right: 15%;
     }
 </style>

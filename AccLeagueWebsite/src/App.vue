@@ -11,16 +11,40 @@ export default {
   name: 'app',
   components: {
   'Navigation': Navigation
+  },
+  mounted() {
+    let bodyElement = document.body;
+    bodyElement.classList.add("app-background");
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: white;
+  background-color: #0a0a0a;
+}
+
+.card {
+  background-color: #363636;
+}
+
+.card-header-title {
+  color: white;
+}
+
+.tabs a {
+  color: white;
+}
+
+.table thead th {
+  color: white;
+}
+
+.label {
+  color: white;
 }
 </style>
